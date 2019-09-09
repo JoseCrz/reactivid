@@ -12,3 +12,17 @@ body {
     padding: 0;
     background: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
 }
+
+.header {
+    width: 100%;
+    min-height: 80px;
+}
+
+.header__img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.header__menu {
+    margin-right: 30px;
+}
