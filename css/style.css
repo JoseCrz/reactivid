@@ -13,16 +13,38 @@ body {
     background: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
 }
 
+figure {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     width: 100%;
     min-height: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header__img {
+.header__logo {
     margin-top: 10px;
     margin-left: 10px;
 }
 
-.header__menu {
+.header__nav {
     margin-right: 30px;
+}
+
+.header__nav__profile {
+    margin-right: 8px;
+}
+
+.header__nav__menu {
+    /* display: none; */
+    margin-left: -14px;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100px;
+    border: 1px solid black;
+    text-align: right;
 }
