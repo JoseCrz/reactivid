@@ -11,6 +11,8 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
+    color: white;
+    font-family: Helvetica, sans-serif;
 }
 
 figure {
@@ -23,6 +25,7 @@ figure {
     min-height: 80px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
@@ -30,21 +33,40 @@ figure {
     margin-left: 10px;
 }
 
-.header__nav {
-    margin-right: 30px;
+.header__nav__profile {
+    display: flex;
+    margin-right: 10px;
 }
 
-.header__nav__profile {
+.header__nav__profile img {
     margin-right: 8px;
 }
 
 .header__nav__menu {
-    /* display: none; */
-    margin-left: -14px;
+    display: none;
     list-style: none;
     padding: 0;
+    margin: 0;
+    margin-right: -8px;
     position: absolute;
     width: 100px;
-    border: 1px solid black;
     text-align: right;
+}
+
+.header__nav__menu li {
+    margin: 10px 0;
+}
+
+.header__nav__menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: -5px;
+}
+
+.header__nav__menu a:hover {
+    text-decoration: underline;
+}
+
+.header__nav:hover .header__nav__menu, .header__nav__menu:hover {
+    display: block;
 }
