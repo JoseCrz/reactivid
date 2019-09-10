@@ -70,3 +70,27 @@ figure {
 .header__nav:hover .header__nav__menu, .header__nav__menu:hover {
     display: block;
 }
+
+.search-bar {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search-bar__title {
+    font-size: 32px;
+}
+
+.search-bar__input {
+    font-size: 18px;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 12px 24px;
+    width: 80%;
+    outline: none;
+    background: rgba(255, 255, 255, .15);
+}
+
+.search-bar__input::placeholder {
+    color: white;
+}
