@@ -96,3 +96,44 @@ figure {
 .search-bar__input::placeholder {
     color: white;
 }
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0;
+    padding-bottom: 0px;
+    border: 1px solid white;
+}
+
+.carousel__item {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    background: var(--gradient-end);
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 450ms;
+    transform-origin: center left;
+}
+
+.carousel__item:hover ~ .carousel__item {
+    transform: translateX(100px);
+}
+
+.carousel__container:hover .carousel__item {
+    opacity: .3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
