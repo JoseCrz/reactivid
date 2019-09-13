@@ -2,6 +2,8 @@
     --gradient-start: #4F00BC;
     --gradient-end: #29ABE2;
     --main-text: #fff;
+    --title-font: 'Quicksand', Helvetica;
+    --body-font: 'Quicksand', Helvetica;
 }
 * {
     box-sizing: border-box;
@@ -13,12 +15,102 @@ body {
     padding: 0;
     background: linear-gradient(to top right, var(--gradient-start), var(--gradient-end));
     color: white;
-    font-family: Helvetica, sans-serif;
+    font-family: var(--body-font);
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    font-weight: 500;
 }
 
 figure {
     margin: 0;
     padding: 0;
+}
+/* *---------------- */
+/* *UTILITARY CLASSES */
+/* *---------------- */
+.label {
+    cursor: pointer;
+}
+
+.link {
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link--bold {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-container--icon-text{
+    margin: 10px 0;
+}
+
+.img-container--icon-text p{
+    margin: 0px 5px;
+}
+
+.input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: var(--main-text);
+    padding: 12px 6px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+    font-family: inherit;
+
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.button {
+    font-family: inherit;
+    background: rgba(255, 255, 255, .3);
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    color: var(--main-text);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 450ms;
+    outline: none;
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    /* transform: translateY(-5px); */
+    background: rgba(255, 255, 255, .4);
+}
+
+.button:active {
+    transform: translateY(5px);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100px;
 }
 
 .header {
@@ -187,13 +279,21 @@ figure {
     min-height: calc(100vh - 200px);
 }
 
+.sign-in__title {
+    font-size: 32px;
+    margin: 0;
+}
+
 .sign-in__container {
     background: rgba(255, 255, 255, .1);
     border: 2px solid white;
     border-radius: 10px;
-    padding: 50px 40px;
+    padding: 0px 40px;
     min-height: 700px;
     width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .sign-in__form {
@@ -204,27 +304,9 @@ figure {
 .sign-in__options {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    padding: 20px 0;
 }
 
-.link {
-    color: var(--main-text);
-    text-decoration: none;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
-
-.img-container {
-    display: flex;
-    align-items: center;
-}
-
-.img-container--icon-text{
-    margin: 10px 0;
-}
-
-.img-container--icon-text p{
-    margin: 0px 5px;
+.sign-in__sign-up {
+    text-align: center;
 }
