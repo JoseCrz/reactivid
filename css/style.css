@@ -159,7 +159,7 @@ figure {
     bottom: 0;
     padding: 6px;
     font-size: 12px;
-    transition: 450ms all;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 450ms;
 }
 
 .carousel-item:hover  .carousel-item__details:hover {
