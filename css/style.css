@@ -1,6 +1,7 @@
 :root {
     --gradient-start: #4F00BC;
     --gradient-end: #29ABE2;
+    --main-text: #fff;
 }
 * {
     box-sizing: border-box;
@@ -172,4 +173,58 @@ figure {
 
 .carousel-item__title {
     font-weight: bold;
+}
+/* *---------------- */
+/* * SIGN-IN STYLES */
+/* *---------------- */
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    min-height: calc(100vh - 200px);
+}
+
+.sign-in__container {
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 50px 40px;
+    min-height: 700px;
+    width: 450px;
+}
+
+.sign-in__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in__options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.link {
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-container--icon-text{
+    margin: 10px 0;
+}
+
+.img-container--icon-text p{
+    margin: 0px 5px;
 }
