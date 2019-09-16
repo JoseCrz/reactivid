@@ -72,7 +72,11 @@ figure {
     outline: none;
     margin-bottom: 20px;
     font-family: inherit;
+    transition: 150ms;
+}
 
+.input:focus {
+    border-bottom: 4px solid white;
 }
 
 .input::placeholder {
@@ -270,7 +274,7 @@ figure {
 /* * SIGN-IN STYLES */
 /* *---------------- */
 
-.sign-in {
+.sign {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,12 +283,12 @@ figure {
     min-height: calc(100vh - 200px);
 }
 
-.sign-in__title {
+.sign__title {
     font-size: 32px;
     margin: 0;
 }
 
-.sign-in__container {
+.sign__container {
     background: rgba(255, 255, 255, .1);
     border: 2px solid white;
     border-radius: 10px;
@@ -296,9 +300,18 @@ figure {
     justify-content: space-evenly;
 }
 
-.sign-in__form {
+.sign__container--sign-up {
+    min-height: 650px;
+}
+
+.sign__form {
     display: flex;
     flex-direction: column;
+}
+
+.sign__form--sign-up {
+    min-height: 400px;
+    justify-content: space-around;
 }
 
 .sign-in__options {
@@ -307,6 +320,6 @@ figure {
     padding: 20px 0;
 }
 
-.sign-in__sign-up {
+.sign-in__alternative {
     text-align: center;
 }
