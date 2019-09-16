@@ -325,6 +325,28 @@ figure {
     text-align: center;
 }
 
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    font-size: 24px;
+}
+
+.not-found__emoji {
+    font-size: 3em;
+    margin: 0;
+}
+
+.not-found__title {
+    font-size: 2em;
+}
+
+.not-found__subtitle {
+    font-size: 1.5em;
+}
+
 /* * ------------- */
 /* * RESPONSIVE */
 /* * ------------- */
