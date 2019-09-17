@@ -19,9 +19,9 @@
         <div class="sign__container">
             <h1 class="sign__title">Welcome</h1>
             <form action="" class="sign__form">
-                <input class="input" type="email" placeholder="User/Email">
-                <input class="input" type="password" placeholder="Password">
-                <button class="button">Sign in</button>
+                <input class="input" type="email" placeholder="User/Email" aria-label="Enter user or email">
+                <input class="input" type="password" placeholder="Password" aria-label="Enter password">
+                <button class="button" aria-label="sign in button">Sign in</button>
                 <div class="sign-in__options">
                     <label class="label" for="remember">
                         <input id="remember" type="checkbox" value="remember" name="remember">Remember me
@@ -30,8 +30,14 @@
                 </div>
             </form>
             <article class="sign-in__social">
-                <figure class="img-container img-container--icon-text"><img src="./img/google-icon.svg" alt="Google icon" width="30px"><p>Sign in with Google</p></figure>
-                <figure class="img-container img-container--icon-text"><img src="./img/twitter-icon.svg" alt="Twitter icon" width="30px"><p>Sign in with Twitter</p></figure>
+                <figure class="img-container img-container--icon-text">
+                    <img src="./img/google-icon.svg" alt="Google icon" width="30px">
+                    <a href="#" class="link">Sign in with Google</a>
+                </figure>
+                <figure class="img-container img-container--icon-text">
+                    <img src="./img/twitter-icon.svg" alt="Twitter icon" width="30px">
+                    <a href="#" class="link">Sign in with Twitter</a>
+                </figure>
             </article>
             <article class="sign-in__sign-up">
                 <p>Don't have an account? <a class="link link--bold" href="./sign-up.html">Sign up!</a></p>
