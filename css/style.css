@@ -200,7 +200,7 @@ figure {
 .carousel {
     width: 100%;
     overflow: scroll;
-    padding: 30px;
+    padding: 0 30px;
     position: relative;
     /* border: 1px solid black; */
 }
