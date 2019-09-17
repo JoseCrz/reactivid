@@ -131,7 +131,10 @@ figure {
 }
 
 .header__nav__profile {
-    display: flex;
+    /* ? Solo así funcionó en Safari... */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    /* display: flex; */
     margin-right: 10px;
 }
 
